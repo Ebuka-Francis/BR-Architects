@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: "Raleway", sans-serif;
+  overflow: auto;
+}
+.nav {
+  position: sticky;
+  overflow: hidden;
+  background-color: #fff;
+  color: #000;
+  padding: 14px 16px;
+  top: 0;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.topnav {
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  overflow: hidden;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  top: 0;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  z-index: 1;
+  cursor: pointer;
+}
+.a1 {
+  float: right;
+  display: block;
+  padding: 14px 16px;
+  color: #000;
+  text-decoration: none;
+}
+.topnav .a1:hover {
+  background-color: antiquewhite;
+}
+.menu {
+  height: 40px;
+  display: none;
+}
+.img1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/images/Architects\ 1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid white;
+  height: 100vh;
+  position: relative;
+  z-index: -10;
+  width: auto;
+}
+.span {
+  color: #fff;
+  background-color: #000;
+  opacity: 0.7;
+}
+.h1t {
+  color: #fff;
+  font-weight: 5em;
+  font-size: 3em;
+}
+
+.container1 {
+  position: relative;
+  opacity: 0.9;
+  z-index: -10;
+  top: 0;
+  left: 0;
+  width: auto;
+}
+.img1 img {
+  max-width: auto;
+}
+.center {
+  color: white;
+  position: absolute;
+  font-size: 2em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 3px;
+  padding: 8px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.center h3 {
+  font-size: 2em;
+  background-color: none;
+  color: #fff;
+}
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.gridcontainer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-template-rows: repeat(2, 1fr); */
+  gap: 10px;
+  padding: 40px 20px;
+}
+.gridcontainer img {
+  max-width: 100%;
+}
+
+.div1 {
+  float: left;
+  background-color: #000 !important ;
+  position: absolute;
+  padding: 8px 16px !important;
+  top: 0;
+  color: #fff;
+}
+
+h2 {
+  margin: auto;
+  font-size: 2em;
+  padding: 20px 20px;
+  font-weight: 300;
+}
+
+.button3 {
+  width: 300px;
+  height: 40px;
+  /* cursor: pointer; */
+}
+.input1:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.items .container2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 20px;
+}
+.section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  padding: 20px 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0, 0.6);
+}
+.section img {
+  max-width: 100%;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+form {
+  padding: 15px 20px 15px 20px;
+}
+input {
+  width: 90%;
+  min-width: 250px;
+  height: 50px;
+  margin-top: 10px;
+  padding: 20px 20px;
+  word-wrap: break-word;
+}
+.input1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 200px;
+  height: 50px;
+  background: #000;
+  color: #fff;
+}
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 20px;
+  text-align: center;
+}
+.ai {
+  text-align: center;
+  color: #fff;
+}
+.ai:hover {
+  color: green;
+}
+.p4 {
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .topnav {
+    display: none;
+  }
+  input {
+    height: 45px;
+    margin-top: 20px;
+  }
+
+  .items {
+    display: inline-block;
+    width: auto;
+  }
+  .gridcontainer {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  div.container1 {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .img1 {
+    height: 38vh;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .img1 {
+    background-size: contain;
+    height: 56vh;
+    background-size: 100%;
+  }
+}
+
+@media screen and (max-width: 676px) {
+  .img1 {
+    height: 34vh;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .img1 {
+    height: 35vh;
+  }
+
+  .menu {
+    display: block;
+    float: right;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .img1 {
+    height: 33vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  .img1 {
+    height: 22vh;
+  }
+
+  .p4,
+  form {
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 290px) {
+  .button3,
+  input {
+    width: 250px;
+  }
+}
