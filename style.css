@@ -55,9 +55,43 @@ header {
 .topnav .a1:hover {
   background-color: antiquewhite;
 }
-.menu {
-  height: 40px;
+.overide {
   display: none;
+}
+
+.menu {
+  height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    /* top: 0; */
+    left: 0;
+    background-color: rgba(20, 0, 0, 0.9);
+    overflow-x: hidden ;
+    transition: 0.5s;
+}
+
+
+.menu-content {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.menu a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  border-bottom: 2px solid #333;
+}
+.menu-content a:hover, .menu-content a:focus {
+  color: #f1f1f1;
+}
+.menu-content .closebtn {
+  position: absolute;
+  font-size: 30px;
 }
 .img1 {
   display: flex;
@@ -123,6 +157,7 @@ header {
   /* grid-template-rows: repeat(2, 1fr); */
   gap: 10px;
   padding: 40px 20px;
+  /* justify-content: center; */
 }
 .gridcontainer img {
   max-width: 100%;
@@ -257,20 +292,25 @@ input {
   }
 }
 
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 767px) {
   .img1 {
     height: 35vh;
   }
-
-  .menu {
-    display: block;
-    float: right;
+  header {
+    padding-inline: 10px;
   }
+
+.overide {
+  display: block;
+}
 }
 
 @media screen and (max-width: 430px) {
   .img1 {
     height: 33vh;
+  }
+  .menu a {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 400px) {

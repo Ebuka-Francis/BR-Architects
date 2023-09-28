@@ -14,10 +14,18 @@
 
     <header>
         <div class="nav"><b style="background-color: #000;color: #fff;padding:1px;"> Br </b>  Architects</div>
-
-        <img src="/images/menu-navbar-options-essential-icon-thumbnail - Copy.png"
-            alt="menu-navbar-options-essential-icon-thumbnail" class="menu">
-
+<div class="overide" >
+    <button onclick="openNav()" style="font-size: 20px;" > <img src="./images/menu-navbar-options-essential-icon-thumbnail - Copy.png" height="20px " width="30px" alt=""></button>
+        <div id="myNav" class="menu" >
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="text-decoration: none;font-size: 50px; color: #fff;">&times;</a>
+            <div class="menu-content">    
+                <a href="#Home">Home</a>
+                <a href="#project">Project</a>
+                <a href="#About">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+</div>
         <div class="topnav">
             <a class="a1" href="#contact">Contact</a>
             <a class="a1" href="#About">About</a>
@@ -145,13 +153,9 @@
     <div class="footer">
         <p style="color:#fff">Powered by <a class="ai" href="#">w3.css</a></p>
     </div>
-
-
-
-
-
-
     </div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
